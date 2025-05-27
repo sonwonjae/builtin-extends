@@ -1,7 +1,7 @@
 {
   "name": "@sonwonjae/builtin-extends",
   "description": "A utility library that collects useful JavaScript built-in object extension methods.",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sonwonjae/builtin-extends.git"
@@ -23,11 +23,9 @@
   "main": "lib/index.js",
   "module": "lib/index.js",
   "types": "index.d.ts",
-  "exports": {
-    "./types": "./index.d.ts"
-  },
   "files": [
-    "/lib"
+    "/lib",
+    "/index.d.ts"
   ],
   "tsup": {
     "entry": [
