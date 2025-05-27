@@ -5,6 +5,7 @@ export default defineConfig({
     splitting: false,
     sourcemap: true,
     clean: true,
+    dts: true,
     target: 'es2015',
     outDir: 'lib'
 })
