@@ -1,7 +1,3 @@
-interface Array<T> {
-  shuffle(): T[];
-}
-
 Array.prototype.shuffle = function shuffle<T>(): T[] {
     const result = [...this];
 
