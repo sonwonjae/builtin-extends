@@ -27,3 +27,14 @@ declare interface String {
      */
     toKebabCase(): string;
 }
+
+declare interface Number {
+    /**
+     * @description 짝수인지 판별해줍니다.
+     */
+    isEven(): boolean;
+    /**
+     * @description 홀수인지 판별해줍니다.
+     */
+    isOdd(): boolean;
+}
