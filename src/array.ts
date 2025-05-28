@@ -11,3 +11,8 @@ Array.prototype.shuffle = function shuffle<T>(): T[] {
 
     return result;
 };
+
+Array.prototype.draw = function draw<T>(): T {
+    const that: T[] = this;
+    return that.shuffle()[0];
+};
