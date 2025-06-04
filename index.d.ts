@@ -1,4 +1,20 @@
-declare interface Array<T> {
+
+declare interface Object {
+    /**
+     * @description 해당 object가 string인지 검증해주는 타입가드입니다.
+     */
+    isString(): this is string;
+    /**
+     * @description 해당 object가 number인지 검증해주는 타입가드입니다.
+     */
+    isNumber(): this is number;
+    /**
+     * @description 해당 object가 boolean인지 검증해주는 타입가드입니다.
+     */
+    isBoolean(): this is boolean;
+}
+
+declare interface Array<T>{
     /**
      * @description 배열 순서를 무작위로 섞어줍니다.
      */
@@ -9,7 +25,7 @@ declare interface Array<T> {
     draw(): T;
 }
 
-declare interface String {
+declare interface String{
     /**
      * @description 케밥/스네이크/파스칼 케이스를 카멜 케이스로 변환해줍니다.
      */
@@ -28,7 +44,7 @@ declare interface String {
     toKebabCase(): string;
 }
 
-declare interface Number {
+declare interface Number{
     /**
      * @description 짝수인지 판별해줍니다.
      */
